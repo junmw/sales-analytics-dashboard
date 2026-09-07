@@ -1,0 +1,6 @@
+{
+  "name": "Sales Analytics Dashboard",
+  "description": "Interactive dashboard for visualizing sales performance, product trends, and payment distributions.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
