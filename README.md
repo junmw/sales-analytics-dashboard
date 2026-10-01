@@ -1,39 +1,41 @@
 # Sales Analytics Dashboard
 
-The Sales Analytics Dashboard is an interactive data visualization platform that transforms retail transaction data into actionable business intelligence.
-## Key Capabilities & Visualizations
+An interactive web application that parses retail transaction data to visualize revenue patterns, catalog performance, and customer purchasing habits.
 
+## Features
 
-High-Level Performance Metrics (KPIs)
+* **Core Performance Indicators:** Real-time tracking of gross revenue, units sold, total order count, average order value, top product, and primary payment method.
+* **Timeline Metrics:** Time-series charts displaying revenue, orders, and units with options for daily totals, moving averages, and cumulative growth.
+* **Catalog Analysis:** Product evaluation with configurable sorting by total revenue, volume, or unit price, alongside specific details on item market share.
+* **Payment Allocation:** Breakdowns of transaction channels detailing unit volumes and average ticket sizes.
+* **Activity Heatmaps:** A calendar matrix mapping daily transaction density and revenue intensity with single-day inspection.
+* **Order Segmentation:** Visualizations covering transaction tier brackets and order complexity comparing single-item vs. multi-item baskets.
+* **Data Exploration:** Multi-parameter filtering by dates, channels, products, or freeform text queries, with a paginated transaction ledger featuring raw data table row inspection and CSV exporting.
+* **Dynamic Data Ingestion:** Front-end data parser allowing users to upload CSV files or paste raw text to analyze custom transaction datasets matching standard retail schemas.
 
-Continuously computes aggregate summary indicators across the active or filtered dataset:
+## Tech Stack
 
-    Total Revenue: Cumulative gross monetary value.
+* **Framework:** React, TypeScript
+* **Build Configuration:** Vite
+* **Deployment Workflow:** GitHub Actions via GitHub Pages
 
-    Volume & Quantity: Total units and line items fulfilled.
+## Installation and Local Setup
 
-    Order Count: Number of distinct checkout transactions.
+1. Clone the project:
+   ```bash
+   git clone https://github.com
+   cd sales-analytics-dashboard
+   ```
 
-    Average Order Value (AOV): Average customer basket spend per transaction.
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-    Leading Contributors: Automated identification of the highest-revenue catalog item and primary payment channel.
+3. Launch the development server:
+   ```bash
+   npm run dev
+   ```
 
-Multi-Perspective Visualization Modules
-
-    Time Series & Trend Analysis: Tracks metric progression across customizable timelines with toggles for daily totals, moving averages (smoothing daily variance), or cumulative growth across revenue, unit, and order volumes.
-
-    Catalog Performance & Ranking: Evaluates item-level performance with configurable sorting by revenue, unit velocity, or unit price, complete with an item spotlight panel detailing revenue share and customer channel preferences.
-
-    Payment & Channel Distribution: Proportional donut breakdown comparing transaction channels by revenue share, unit volume, and average transaction size.
-
-    Activity Heatmap: Calendar matrix highlighting transaction density and revenue intensity over time, with click-to-inspect detail panels for any specific date.
-
-    Basket Size & Tier Segmentation: Evaluates single-item versus multi-item order complexity and groups items into price brackets to visualize volume concentration across spend tiers.
-
-    Itemized Ledger: A sortable, searchable, and paginated data table offering granular row inspection and one-click CSV data export.
-
-Interactive Exploration & Data Ingestion
-
-    Dynamic Multi-Parameter Filtering: Slice data by date presets, custom date windows, channel types, specific catalog items, or freeform search queries, updating all visualizations synchronously.
-
-    Flexible Data Ingestion: Built-in support to upload new CSV files or paste raw delimited text on the fly, allowing immediate analysis of any dataset matching standard transaction schemas (Order ID, Item, Price, Date, Payment Method).
+## Repository Background
+This application was built as a standalone frontend dashboard using a template designed to evaluate high-volume client-side data parsing and responsive visualization updates within static host environments.
